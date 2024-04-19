@@ -1,13 +1,37 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+#root{
+  display: flex;
+  flex-direction: column;
+  flex:1;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  flex:1;
+  height:100vh;
+  font-family:
+    Gill Sans Extrabold,
+    display;
+}
+
+@font-face {
+  font-family: "Pepper Co";
+  src: url('./fonts/PEPPERCo.otf');
+}
+
+@font-face {
+  font-family: "Power Up";
+  src: url('./fonts/POWER_UP.otf');
+}
+
+@font-face {
+  font-family: "Player one";
+  src: url('./fonts/PLAYER_ONE.otf');
+}
+
+@font-face {
+  font-family: "GoldenAvocadoSans";
+  src: url('./fonts/GoldenAvocadoSans-Yqq1q.otf');
 }
