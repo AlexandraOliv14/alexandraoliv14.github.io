@@ -6,13 +6,11 @@ export const Home = () => {
     return (
         <div className='containerHome'>
             <div className='containerInfo'>
-                <h1>Hola, soy Alexandra Olivares <br/>
+                <h1>Hola! mi nombre es Alexandra Olivares <br/>
                 </h1>
                 <p>
-                Una  desarrolladora de software Full Stack 
-                con una pasión por crear aplicaciones web y 
-                móviles. He trabajando con tecnologias como
-                React, React Native, Java, Python entre otras.
+                programadora full stack exprimentada en react js, native y algo de java.<br/><br/>
+                Apasionada por proyectos innovadores, siempre en busca de nuevos proyectos o algo nuevo que aprender.
                 </p>
                 <br/>
             </div>
