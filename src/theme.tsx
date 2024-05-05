@@ -1,7 +1,7 @@
 export const theme ={
     warm:{
         primary:'#DCB5A5',
-        secondary:'#FFF9F6'
+        secondary:'#FFE7DA'
     },
     cool:{
         primary:'#E8F1FE',

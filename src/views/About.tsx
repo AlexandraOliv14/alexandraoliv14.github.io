@@ -34,16 +34,16 @@ export const About = () => {
                 <div className='img'>
                     <img src='./imgs/aleyPatana.jpg' width={417} height={420} alt='aleypatana' />
                 </div>
-                <p>
+                <div className='p'>
                     <Typewriter
+                        options={{delay:30}}
                         onInit={(typewriter) => {
                             typewriter
-                                .typeString('¡Hola! Soy Alexandra Olivares<br /> Solís, ingeniera informática<br />especializada en desarrollo<br />de software full-stack, con <br />un enfoque en React.js, React<br />Native, y Java.')
-                                .pauseFor(1000)
+                                .typeString('¡Hola! Soy Alexandra Olivares<br /> Solís, Ingeniera informática<br />especializada en desarrollo<br />de software full-stack, con <br />un enfoque en React.js, React<br />Native, y Java.')
                                 .start();
                         }}
                     />
-                </p>
+                </div>
             </div>
             <Separacion />
             <div className='about-educacion'>
@@ -69,7 +69,7 @@ export const About = () => {
                     <img src='./imgs/DALL_E_crecimiento.png' width={500} alt='dallydiploma' style={{ background: theme[currentState].primary }} />
                 </div>
                 <p ref={aboutEduRef}>
-                    {inViewportEdu && <FadeInText text="Estoy profundamente apasionada por los proyectos innovadores y me encuentro constantemente     en búsqueda de nuevas     oportunidades y aprendizajes en el  mundo del desarrollo." />}                  
+                    {inViewportEdu && <FadeInText text="  Me apasiona profundamente       trabajar en proyectos      innovadores y me encuentro    constantemente en búsqueda de     nuevas oportunidades y    aprendizajes en el mundo del desarrollo." />}                  
                 </p>
             </div>
             <Separacion />

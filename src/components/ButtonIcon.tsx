@@ -2,7 +2,7 @@ import React from 'react'
 
 interface Props{
     url?:string;
-    href:string;
+    href?:string;
     children?: JSX.Element[] | JSX.Element;
     color?:string;
 }
