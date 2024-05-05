@@ -1,69 +1,54 @@
-@import './sass/star'
+
 @import './sass/nav'
 @import './sass/home'
 @import './sass/about'
+@import './sass/button'
 
 @font-face
-    font-family: "Pepper Co"
-    src: url("fonts/PEPPERCo.otf")
-
-@font-face
-    font-family: "Power Up"
-    src: url("fonts/POWER_UP.otf")
-
-@font-face
-    font-family: "Player one"
-    src: url("fonts/PLAYER_ONE.otf")
-
-@font-face
-    font-family: "GoldenAvocadoSans"
-    src: url("fonts/GoldenAvocadoSans-Yqq1q.otf")
-
-$body-font: "GoldenAvocadoSans", display
+  font-family: 'JetBrainsMono'
+  src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2') format('woff2'),url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Regular.woff') format('woff'),url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/ttf/JetBrainsMono-Regular.ttf') format('truetype')
+  font-weight: 400
+  font-style: normal
 
 // Root element styles
 #root
-    display: flex
-    flex-direction: column
-    flex: 1
-    font-family: $body-font
-    color: white
+  display: flex
+  flex-direction: column
+  flex: 1
+  font-family: 'JetBrainsMono'
+  color: black
 
 // Body element styles
 body
-    margin: 0
-    display: flex
-    flex-direction: column
-    flex: 1
-    height: 100vh
+  margin: 0
+  display: flex
+  flex-direction: column
+  flex: 1
+  height: 100vh
 
 h1
-    display: flex
-    font-size: 40px
+  display: flex
+  font-size: 40px
+  font-weight: normal
 
 h2
-    display: flex
-    font-size: 15px
-    min-width: 165px
-    flex-direction: column
-    @media(max-width: 576px)
-        width: 165px
+  display: flex
+  font-size: 15px
+  min-width: 165px
+  flex-direction: column
+  @media(max-width: 576px)
+    width: 165px
 
 a
-    color: white
+  color: white
 
 p
-    text-align: center
-    font-size: 20px
+  text-align: center
+  font-size: 20px
 
-button
-    width: 30vw
-    height: 8vh
-    padding: 15px
-    border-radius: 9px
-    background: #282834
-    color: #EAEAEA
-    font-family: $body-font
 
-button:hover
-        cursor: pointer
+.separacion
+  display: flex
+  border-bottom:2px solid grey
+  width:80%
+  align-self: center

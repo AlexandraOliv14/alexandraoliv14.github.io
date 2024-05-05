@@ -1,42 +1,71 @@
 import React from 'react'
+import { Separacion } from '../components/Separacion'
+import { ButtonIcon } from '../components/ButtonIcon'
+import { FiGithub, FiLinkedin } from "react-icons/fi";
 
 export const About = () => {
-    const onButtonClick = () => {
-        const pdfUrl = "/documentCurriculum.pdf";
-        const link = document.createElement('a');
-        link.href = pdfUrl;
-        link.setAttribute('download', 'Currículum Alexandra Olivares.pdf');
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-    };
+
 
     return (
         <div className='about'>
-            <div className='aboutImg'>
-                <div className='imgcontainer'>
-                    <div className='marco1'>
-                        <img alt='' src='./imgs/aleyPatana.jpg' width={250} height={250} />
-                    </div>
+            <div className='about-me'>
+                <div className='img'>
+                    <img src='./imgs/aleyPatana.jpg' width={417} height={420} alt='aleypatana' />
                 </div>
-                <div className='info'>
-                    <p>Soy una persona responsable y proactiva,<br />
-                        amante de los animales y la naturaleza.<br />
-                    </p>
-                    <br />
-                    <p>con la capacidad de trabajar bajo presión y <br />
-                    una alta habilidad para resolver problemas.</p>
-                    <br />
-                    <p>Mi objetivo profesional es seguir aprendiendo y<br /> 
-                    creciendo en el campo de la ingeniería de software. <br /></p>
-                    <br />
-                    <p>Me encanta desarrollar aplicaciones innovadoras </p>
+                <p>¡Hola! Soy Alexandra Olivares<br />
+                    Solís, ingeniera informática<br />
+                    especializada en desarrollo<br />
+                    de software full-stack, con <br />
+                    un enfoque en React.js, React<br />
+                    Native, y Java.
+                </p>
+            </div>
+            <Separacion />
+            <div className='about-educacion'>
+                <p>
+                    Me gradué de la<br />
+                    Universidad Tecnológica<br />
+                    Metropolitana y <br />
+                    actualmente estoy <br />
+                    expandiendo mis <br />
+                    conocimientos a través <br />
+                    de un máster en <br />
+                    Ingeniería Informática <br />
+                    en la Universidad <br />
+                    Politécnica de Cataluña.
+                </p>
+                <div className='img'>
+                    <img src='./imgs/DALL_E_diploma.png' width={500} alt='dallydiploma' />
                 </div>
             </div>
-            <div className='button'>
-                <button onClick={onButtonClick}>
-                    Descarga mi curriculum aqui!!
-                </button>
+            <Separacion />
+            <div className='about-actual'>
+                <div className='img'>
+                    <img src='./imgs/DALL_E_crecimiento.png' width={500} alt='dallydiploma' />
+                </div>
+                <p>
+                    Estoy profundamente <br />
+                    apasionada por los <br />
+                    proyectos innovadores y <br />
+                    me encuentro <br />
+                    constantemente en <br />
+                    búsqueda de nuevas <br />
+                    oportunidades y <br />
+                    aprendizajes en el mundo <br />
+                    del desarrollo.
+                </p>
+            </div>
+            <Separacion />
+            <div className='about-findme'>
+                <h1>🔎 Puedes encontrarme en</h1>
+                <div className='links'>
+                    <ButtonIcon href='https://www.linkedin.com/in/alexandraos14/'>
+                        <FiGithub style={{fontSize:60, margin:'5px', color:'black'}}/>
+                    </ButtonIcon>
+                    <ButtonIcon href='https://github.com/AlexandraOliv14'>
+                        <FiLinkedin style={{fontSize:60, margin:'5px', color:'black'}}/>
+                    </ButtonIcon>
+                </div>
             </div>
         </div>
     )
