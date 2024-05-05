@@ -1,6 +1,15 @@
-import React from 'react'
+import React, { useContext, useEffect } from 'react'
+import { ThemeContext } from '../context/themeContext';
 
 export const Home = () => {
+
+    const {toggleState} = useContext(ThemeContext);
+
+    useEffect(() => {
+        toggleState('cool')
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [])
+
     return (
         <div className='containerHome'>
             <div className='containerFoto'>

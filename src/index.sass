@@ -3,6 +3,7 @@
 @import './sass/home'
 @import './sass/about'
 @import './sass/button'
+@import './sass/portafolio'
 
 @font-face
   font-family: 'JetBrainsMono'
@@ -52,3 +53,24 @@ p
   border-bottom:2px solid grey
   width:80%
   align-self: center
+
+.char 
+  font-size: 40px
+  height: 40px
+  animation: an 1s ease-out 1 both
+  display: inline-block
+
+
+@keyframes an 
+  from 
+    opacity: 0
+    transform: perspective(500px) translate3d(-35px, -40px, -150px) rotate3d(1, -1, 0, 35deg)
+  
+  to 
+    opacity: 1
+    transform: perspective(500px) translate3d(0, 0, 0)
+  
+
+* 
+  scrollbar-width: none
+  -webkit-scrollbar-width: none

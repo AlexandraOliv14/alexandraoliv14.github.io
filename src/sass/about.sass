@@ -6,7 +6,7 @@
 
     p
         display: flex
-        flex:6
+        flex: 6
         align-items: center
         font-size: 40px
 
@@ -17,7 +17,7 @@
         align-items: center
         img
             border-radius: 30px
-            background-color: #CDDCA5
+            background-color: #FFFFFF
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
 
     .about-me
@@ -27,6 +27,10 @@
         flex-wrap: wrap
         p
             justify-content: flex-start
+            display: flex
+            flex: 6
+            align-items: center
+            font-size: 40px
 
     .about-educacion
         margin: 10vw 0px
@@ -35,15 +39,19 @@
         flex-wrap: wrap
         p
             justify-content: flex-end
-        //media para actualizar p a center
+
     .about-actual
+        // width: 100%
         margin: 10vw 0px
         display: flex
         flex-direction: row
         flex-wrap: wrap
         p
             justify-content: flex-start
-    
+            width: 80%
+            display: block
+            text-align: center
+
     .about-findme
         margin: 20vw 0px
         display: flex
@@ -56,3 +64,15 @@
             flex-direction: row
             gap: 50px
             margin: 50px
+
+.animacion
+    animation: fade-in 10s
+
+@keyframes fade-in 
+    0% 
+        opacity: 0
+    100% 
+        opacity: 1
+
+.hidden
+    visibility: hidden
