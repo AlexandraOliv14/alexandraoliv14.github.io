@@ -61,7 +61,7 @@ export const Portafolio = () => {
                             <div className="button2">
                                 <div className='button-item'>
                                     <ButtonIcon color={color1}>
-                                        <FiGithub style={{ fontSize: size[sizeButton as sizeType], margin: '5px', color: 'black' }} />
+                                        <FiGithub style={{ fontSize: size[sizeButton as sizeType], color: 'black' }} />
                                     </ButtonIcon>
                                 </div>
                                 <div className='button-item'>

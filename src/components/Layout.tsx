@@ -16,7 +16,7 @@ export const Layout = () => {
     }
     return (
         <>
-            <nav className='nav'>
+            <nav className='nav' id='about'>
                 <div className='titulo'>
                     <h1>Alexandra Olivares Solís</h1>
                 </div>
