@@ -12,3 +12,11 @@ export const theme ={
         secondary:'#EFFDCB'
     }
 }
+
+export const size: Record<sizeType, number> = {
+    small:40,
+    medium:45,
+    large:50
+}
+
+export type sizeType = 'small' | 'medium' | 'large'
