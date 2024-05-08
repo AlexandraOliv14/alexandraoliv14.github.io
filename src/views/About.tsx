@@ -4,7 +4,7 @@ import { FiGithub, FiLinkedin } from "react-icons/fi";
 import { Separacion } from '../components/Separacion'
 import { ButtonIcon } from '../components/ButtonIcon'
 import { ThemeContext } from '../context/themeContext';
-import { theme } from '../theme';
+import { theme, size } from '../theme';
 import Typewriter from "typewriter-effect";
 import useInViewPort from '../hooks/useInViewPort';
 import FadeInText from '../components/FadeInText';
@@ -86,10 +86,10 @@ export const About = () => {
                 </h1>}
                 <div className='links'>
                     <ButtonIcon href='https://www.linkedin.com/in/alexandraos14/' color={theme[currentState].primary}>
-                        <FiLinkedin style={{ fontSize: 60, margin: '5px', color: 'black' }} />
+                        <FiLinkedin style={{ fontSize: size['large'] , margin: '5px', color: 'black' }} />
                     </ButtonIcon>
                     <ButtonIcon href='https://github.com/AlexandraOliv14' color={theme[currentState].primary}>
-                        <FiGithub style={{ fontSize: 60, margin: '5px', color: 'black' }} />
+                        <FiGithub style={{ fontSize: size['large'] , margin: '5px', color: 'black' }} />
                     </ButtonIcon>
                 </div>
             </div>
