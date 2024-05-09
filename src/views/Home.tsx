@@ -13,7 +13,7 @@ export const Home = () => {
     return (
         <div className='containerHome'>
             <div className='containerFoto'>
-                <img src='./imgs/aleAnimada.png' alt='aleAnimada' width={389}/>
+                <img src='./imgs/aleAnimada.png' alt='aleAnimada' width={300}/>
             </div>
             <div className='containerInfo'>
                 <div className='saludo'>
