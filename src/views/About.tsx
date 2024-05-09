@@ -42,14 +42,14 @@ export const About = () => {
             setDown(false)
         }
         // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [inViewport,inViewportFind])
-    
+    }, [inViewport, inViewportFind])
+
 
 
     return (
         <div className='about'>
             <div className='about-me' ref={aboutRef}>
-                <ButtonIcon href={down?'#about-findme':'#about'} color={theme[currentState].primary} fixed={true}>
+                <ButtonIcon href={down ? '#about-findme' : '#about'} color={theme[currentState].primary} fixed={true}>
                     {
                         down ?
                             <FiArrowDown style={{ fontSize: size['small'], color: 'black' }} /> :
@@ -95,7 +95,8 @@ export const About = () => {
                     <img src='./imgs/DALL_E_crecimiento.png' width={500} alt='dallydiploma' style={{ background: theme[currentState].primary }} />
                 </div>
                 <p ref={aboutEduRef}>
-                    {inViewportEdu && <FadeInText text="Me apasiona profundamente  trabajar en proyectos      innovadores y me     encuentro constantemente   en búsqueda de nuevas       oportunidades y     aprendizajes en el mundo del desarrollo." />}
+                    {inViewportEdu ? <FadeInText text="Me apasiona profundamente  trabajar en proyectos      innovadores y me     encuentro constantemente   en búsqueda de nuevas       oportunidades y     aprendizajes en el mundo del desarrollo." />
+                        : <FadeInText text='   ' />}
                 </p>
             </div>
             <Separacion />

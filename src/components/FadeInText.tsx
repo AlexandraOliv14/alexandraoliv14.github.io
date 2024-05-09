@@ -5,8 +5,8 @@ interface Props{
 
 const FadeInText = ({ text }:Props) => {
     return (
-        <div className="center">
-            <p>{addAnimation(text)}</p>
+        <div className="p-container">
+            <p className="p">{addAnimation(text)}</p>
         </div>
     );
 };
