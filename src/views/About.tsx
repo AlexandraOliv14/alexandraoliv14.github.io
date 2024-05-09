@@ -95,7 +95,7 @@ export const About = () => {
                     <img src='./imgs/DALL_E_crecimiento.png' width={500} alt='dallydiploma' style={{ background: theme[currentState].primary }} />
                 </div>
                 <p ref={aboutEduRef}>
-                    {inViewportEdu && <FadeInText text="  Me apasiona profundamente       trabajar en proyectos      innovadores y me encuentro    constantemente en búsqueda de     nuevas oportunidades y    aprendizajes en el mundo del desarrollo." />}
+                    {inViewportEdu && <FadeInText text="Me apasiona profundamente  trabajar en proyectos      innovadores y me     encuentro constantemente   en búsqueda de nuevas       oportunidades y     aprendizajes en el mundo del desarrollo." />}
                 </p>
             </div>
             <Separacion />
