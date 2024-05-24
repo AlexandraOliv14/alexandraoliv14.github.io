@@ -15,19 +15,19 @@ export const About = () => {
     const [down, setDown] = useState(true);
 
     const targetRef = useRef<HTMLDivElement>(null);
-    const inViewport = useInViewPort(targetRef, { threshold: 0.5 });
+    const {inViewport} = useInViewPort(targetRef, { threshold: 0.5 });
 
     const aboutEduRef = useRef<HTMLDivElement>(null);
-    const inViewportEdu = useInViewPort(aboutEduRef, { threshold: 0.5 });
+    const {observed:inViewportEdu } = useInViewPort(aboutEduRef, { threshold: 0.5 });
 
     const findRef = useRef<HTMLDivElement>(null);
-    const inViewportFind = useInViewPort(findRef, { threshold: 0.5 });
+    const {inViewport:inViewportFind} = useInViewPort(findRef, { threshold: 0.5 });
 
     const aboutRef = useRef<HTMLDivElement>(null);
-    const inViewAbout = useInViewPort(aboutRef, { threshold: 0.5 });
+    const {inViewport: inViewAbout} = useInViewPort(aboutRef, { threshold: 0.5 });
 
     const footerRef = useRef<HTMLDivElement>(null);
-    const inViewFooter = useInViewPort(footerRef, { threshold: 0.5 });
+    const {inViewport: inViewFooter} = useInViewPort(footerRef, { threshold: 0.5 });
 
     useEffect(() => {
         toggleState('ligthwarm')
@@ -94,10 +94,10 @@ export const About = () => {
                 <div className='img'>
                     <img src='./imgs/DALL_E_crecimiento.png' width={500} alt='dallydiploma' style={{ background: theme[currentState].primary }} />
                 </div>
-                <p ref={aboutEduRef}>
+                <div className='container-text' ref={aboutEduRef}>
                     {inViewportEdu ? <FadeInText text="Me apasiona profundamente  trabajar en proyectos      innovadores y me     encuentro constantemente   en búsqueda de nuevas       oportunidades y     aprendizajes en el mundo del desarrollo." />
                         : <FadeInText text='   ' />}
-                </p>
+                </div>
             </div>
             <Separacion />
             <div className='about-findme' ref={findRef} id='about-findme'>

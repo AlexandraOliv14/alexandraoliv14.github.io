@@ -2,10 +2,15 @@ import { useState, useEffect } from 'react';
 
 function useInViewPort<T extends HTMLElement>(ref: React.RefObject<T>, options?: IntersectionObserverInit) {
     const [inViewport, setInViewport] = useState(false);
+    const [observed, setObserved] = useState(false);
+
 
     useEffect(() => {
         const observer = new IntersectionObserver(([entry]) => {
             setInViewport(entry.isIntersecting);
+            if (!observed && entry.isIntersecting) {
+                setObserved(true);
+            }
         }, options);
 
         const currentRef = ref.current;
@@ -18,8 +23,8 @@ function useInViewPort<T extends HTMLElement>(ref: React.RefObject<T>, options?:
                 observer.unobserve(currentRef);
             }
         };
-    }, [options, ref]);
+    }, [options, ref, observed]);
 
-    return inViewport;
+    return {inViewport, observed};
 }
 export default useInViewPort;

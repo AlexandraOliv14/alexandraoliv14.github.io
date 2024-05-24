@@ -7,14 +7,14 @@
     p
         display: flex
         flex-grow: 6
-        flex-basis: 300px
+        flex-basis: 600px
         align-items: center
         font-size: 40px
 
     .img
         display: flex
         flex-grow: 6
-        flex-basis: 300px
+        flex-basis: 600px
         justify-content: center
         align-items: center
         img
@@ -33,6 +33,8 @@
             text-align: center
             margin: 20px
             padding: 20px
+            flex-grow: 1
+            flex-basis: 600px
 
     .about-educacion
         margin: 5vw 0px
@@ -41,10 +43,7 @@
         flex-grow: 1
         flex-wrap: wrap
         p
-            justify-content: flex-end
-        @media (max-width: 992px)
-            p
-                justify-content: center
+            justify-content: center
 
     .about-actual
         width: 100%
@@ -53,22 +52,25 @@
         flex: 1
         flex-direction: row
         flex-wrap: wrap-reverse
-
-        .p-container
+        .container-text
             display: flex
             flex-grow: 6
-            flex-basis: 300px
-            
-            justify-items: flex-start
+            flex-basis: 600px
+            justify-content: center
+            align-items: center
             padding: 40px
             margin: 20px
-            
-            .p
-                width: 600px
-                display: block
-                text-align: center
+            .p-container
+                display: flex
+                justify-content: center
+                align-items: center
+                
+                .p
+                    width: 600px
+                    display: block
+                    text-align: center
 
-    @media (max-width: 992px)
+    @media (max-width:  600px)
         .p-container
             justify-items: center
             padding: 40px
