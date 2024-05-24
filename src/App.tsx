@@ -1,5 +1,5 @@
 
-import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Navigate} from 'react-router-dom';
 import { Home } from './views/Home';
 import { Layout } from './components/Layout';
 import { About } from './views/About';
@@ -15,6 +15,7 @@ function App() {
           <Route path="/about" element={<About/>}/>
           <Route path='/portafolio' element={<Portafolio/>}/>
         </Route>
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </Router>
   );
