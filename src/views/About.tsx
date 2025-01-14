@@ -98,6 +98,9 @@ export const About = () => {
                     {inViewportEdu ? <FadeInText text="Me apasiona profundamente  trabajar en proyectos      innovadores y me     encuentro constantemente   en búsqueda de nuevas       oportunidades y     aprendizajes en el mundo del desarrollo." />
                         : <FadeInText text='   ' />}
                 </div>
+                <div className='container-text_min'>
+                    <p>Me apasiona profundamente trabajar en proyectos innovadores y me encuentro constantemente en búsqueda de nuevas oportunidades y aprendizajes en el mundo del desarrollo.</p>
+                </div>
             </div>
             <Separacion />
             <div className='about-findme' ref={findRef} id='about-findme'>

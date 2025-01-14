@@ -18,6 +18,7 @@
         flex-basis: 600px
         justify-content: center
         align-items: center
+        margin: 30px
         img
             border-radius: 30px
             background-color: #FFFFFF
@@ -45,6 +46,8 @@
         flex-wrap: wrap
         p
             justify-content: center
+            padding: 20px
+            margin: 20px
 
     .about-actual
         width: 100%
@@ -53,23 +56,38 @@
         flex: 1
         flex-direction: row
         flex-wrap: wrap-reverse
-        .container-text
-            display: flex
-            flex-grow: 6
-            flex-basis: 600px
-            justify-content: center
-            align-items: center
-            padding: 40px
-            margin: 20px
-            .p-container
+        
+        @media (min-width:600px)
+            .container-text
                 display: flex
+                flex-grow: 6
+                flex-basis: 600px
                 justify-content: center
                 align-items: center
-                
-                .p
-                    width: 600px
-                    display: block
-                    text-align: center
+                padding: 40px
+                margin: 20px
+
+                .p-container
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    .p
+                        width: 600px
+                        display: block
+                        text-align: center
+
+            .container-text_min
+                display: none
+
+        @media ( max-width: 600px )
+            .container-text
+                display: none
+            
+            .container-text_min
+                display: flex
+                padding: 20px
+                margin: 20px
+
 
     @media (max-width:600px)
         .p-container
@@ -90,14 +108,14 @@
             gap: 50px
             margin: 50px
 
-.animacion
-    animation: fade-in 10s
+    .animacion
+        animation: fade-in 10s
 
-@keyframes fade-in 
-    0% 
-        opacity: 0
-    100% 
-        opacity: 1
+    @keyframes fade-in 
+        0% 
+            opacity: 0
+        100% 
+            opacity: 1
 
-.hidden
-    visibility: hidden
+    .hidden
+        visibility: hidden
