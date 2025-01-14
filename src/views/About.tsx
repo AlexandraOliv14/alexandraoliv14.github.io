@@ -33,6 +33,9 @@ export const About = () => {
     const {inViewport: inViewFooter} = useInViewPort(footerRef, { threshold: 0.5 });
 
     useEffect(() => {
+        console.log(inViewPortEduNow)
+        console.log(inViewportEdu)
+        console.log(count)
         if(inViewPortEduNow){
             setCount(c=>c+1);
         }
@@ -82,7 +85,7 @@ export const About = () => {
 
             <Separacion />
             <div className='about-educacion'>
-                <p ref={targetRef} className={count>1?'visible' : (inViewport ? 'animacion' : 'hidden') }>
+                <p ref={targetRef} className={(count>1 || width<600)?'visible' : (inViewport ? 'animacion' : 'hidden') }>
                     Me gradué de la
                     Universidad Tecnológica<br />
                     Metropolitana y <br />
@@ -125,10 +128,10 @@ export const About = () => {
                 </h1>}
                 <div className='links' id='link' ref={footerRef}>
                     <ButtonIcon href='https://www.linkedin.com/in/alexandraos14/' color={theme[currentState].primary}>
-                        <FiLinkedin style={{ fontSize: size['large'], color: 'black' }} />
+                        <FiLinkedin style={{ fontSize:width>=600? size['large']: size['small'] , color: 'black' }} />
                     </ButtonIcon>
                     <ButtonIcon href='https://github.com/AlexandraOliv14' color={theme[currentState].primary}>
-                        <FiGithub style={{ fontSize: size['large'], color: 'black' }} />
+                        <FiGithub style={{ fontSize: width>=600? size['large']: size['small'] , color: 'black' }} />
                     </ButtonIcon>
                 </div>
             </div>
