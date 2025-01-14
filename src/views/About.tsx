@@ -44,8 +44,6 @@ export const About = () => {
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [inViewport, inViewportFind])
 
-
-
     return (
         <div className='about'>
             <div className='about-me' ref={aboutRef}>
