@@ -57,7 +57,7 @@ export const About = () => {
                     }
                 </ButtonIcon>
                 <div className='img'>
-                    <img src='./imgs/aleyPatana.jpg' width={width>=600?417:210} height={width>=600?417:210} alt='aleypatana' />
+                    <img src='./imgs/aleyPatana.jpg' width={width>=600?417:150} height={width>=600?417:150} alt='aleypatana' />
                 </div>
                 <div className='p'>
                     <Typewriter
@@ -86,13 +86,13 @@ export const About = () => {
                     Politécnica de Cataluña.
                 </p>
                 <div className='img'>
-                    <img src='./imgs/DALL_E_diploma.png' width={width>=600?417:210} height={width>=600?417:210} alt='dallydiploma' style={{ background: theme[currentState].primary }} />
+                    <img src='./imgs/DALL_E_diploma.png' width={width>=600?417:150} height={width>=600?417:150} alt='dallydiploma' style={{ background: theme[currentState].primary }} />
                 </div>
             </div>
             <Separacion />
             <div className='about-actual'>
                 <div className='img'>
-                    <img src='./imgs/DALL_E_crecimiento.png' width={width>=600?417:210} height={width>=600?417:210} alt='dallydiploma' style={{ background: theme[currentState].primary }} />
+                    <img src='./imgs/DALL_E_crecimiento.png' width={width>=600?417:150} height={width>=600?417:150} alt='dallydiploma' style={{ background: theme[currentState].primary }} />
                 </div>
                 <div className='container-text' ref={aboutEduRef}>
                     {inViewportEdu ? <FadeInText text="Me apasiona profundamente  trabajar en proyectos      innovadores y me     encuentro constantemente   en búsqueda de nuevas       oportunidades y     aprendizajes en el mundo del desarrollo." />
