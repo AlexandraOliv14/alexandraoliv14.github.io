@@ -15,12 +15,13 @@ export const About = () => {
 
     const { toggleState, currentState } = useContext(ThemeContext);
     const [down, setDown] = useState(true);
+    const [count, setCount] = useState(0)
 
     const targetRef = useRef<HTMLDivElement>(null);
     const {inViewport} = useInViewPort(targetRef, { threshold: 0.5 });
 
     const aboutEduRef = useRef<HTMLDivElement>(null);
-    const {observed:inViewportEdu } = useInViewPort(aboutEduRef, { threshold: 0.5 });
+    const {observed:inViewportEdu,inViewport: inViewPortEduNow } = useInViewPort(aboutEduRef, { threshold: 0.5 });
 
     const findRef = useRef<HTMLDivElement>(null);
     const {inViewport:inViewportFind} = useInViewPort(findRef, { threshold: 0.5 });
@@ -30,6 +31,14 @@ export const About = () => {
 
     const footerRef = useRef<HTMLDivElement>(null);
     const {inViewport: inViewFooter} = useInViewPort(footerRef, { threshold: 0.5 });
+
+    useEffect(() => {
+        if(inViewPortEduNow){
+            setCount(c=>c+1);
+        }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [inViewPortEduNow])
+    
 
     useEffect(() => {
         toggleState('ligthwarm')
@@ -73,8 +82,8 @@ export const About = () => {
 
             <Separacion />
             <div className='about-educacion'>
-                <p ref={targetRef} className={inViewport ? 'animacion' : 'hidden'}>
-                    Me gradué de la<br />
+                <p ref={targetRef} className={count>1?'visible' : (inViewport ? 'animacion' : 'hidden') }>
+                    Me gradué de la
                     Universidad Tecnológica<br />
                     Metropolitana y <br />
                     actualmente estoy <br />
