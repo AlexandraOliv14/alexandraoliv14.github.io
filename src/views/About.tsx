@@ -55,7 +55,7 @@ export const About = () => {
                     }
                 </ButtonIcon>
                 <div className='img'>
-                    <img src='./imgs/aleyPatana.jpg' width={417} height={417} alt='aleypatana' />
+                    <img src='./imgs/aleyPatana.jpg' width={400} height={400} alt='aleypatana' />
                 </div>
                 <div className='p'>
                     <Typewriter
