@@ -33,9 +33,6 @@ export const About = () => {
     const {inViewport: inViewFooter} = useInViewPort(footerRef, { threshold: 0.5 });
 
     useEffect(() => {
-        console.log(inViewPortEduNow)
-        console.log(inViewportEdu)
-        console.log(count)
         if(inViewPortEduNow){
             setCount(c=>c+1);
         }
