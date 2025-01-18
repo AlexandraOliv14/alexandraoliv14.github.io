@@ -7,6 +7,7 @@ import { ThemeContext } from '../context/themeContext';
 import { theme, size } from '../theme';
 import Typewriter from "typewriter-effect";
 import useInViewPort from '../hooks/useInViewPort';
+import { useResponsiveWidth } from '../hooks/useResponsiveWidth';
 import FadeInText from '../components/FadeInText';
 
 export const About = () => {
@@ -101,7 +102,7 @@ export const About = () => {
             <Separacion />
             <div className='about-actual'>
                 <div className='img'>
-                    <img src='./imgs/DALL_E_crecimiento.png' width={width>=600?417:150} height={width>=600?417:150} alt='dallydiploma' style={{ background: theme[currentState].primary }} />
+                    <img src='./imgs/DALL_E_crecimiento.png' width={width>=600?417:150} height={width>=600?417:150} alt='dallycrecimiento' style={{ background: theme[currentState].primary }} />
                 </div>
                 <div className='container-text' ref={aboutEduRef}>
                     {inViewportEdu ? <FadeInText text="Me apasiona profundamente  trabajar en proyectos      innovadores y me     encuentro constantemente   en búsqueda de nuevas       oportunidades y     aprendizajes en el mundo del desarrollo." />
@@ -135,16 +136,3 @@ export const About = () => {
         </div>
     )
 }
-
-const useResponsiveWidth = () => {
-    const [width, setWidth] = useState(window.innerWidth);
-
-    useEffect(() => {
-        const handleResize = () => setWidth(window.innerWidth);
-        window.addEventListener("resize", handleResize);
-      // Cleanup function to remove the event listener
-        return () => window.removeEventListener("resize", handleResize);
-    }, []);
-
-    return width;
-};

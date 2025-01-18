@@ -1,5 +1,5 @@
 
-import { BrowserRouter as Router, Route, Routes, Navigate} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import { Home } from './views/Home';
 import { Layout } from './components/Layout';
 import { About } from './views/About';

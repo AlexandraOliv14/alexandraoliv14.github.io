@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <Home/> Debe coincidir con Snapshot 1`] = `
+<div>
+  <div
+    class="containerHome"
+  >
+    <div
+      class="containerFoto"
+    >
+      <img
+        alt="aleAnimada"
+        src="./imgs/aleAnimada.png"
+        width="300"
+      />
+    </div>
+    <div
+      class="containerInfo"
+    >
+      <div
+        class="saludo"
+      >
+        <h1>
+          Hola 👋
+          <br />
+          Soy Alexandra Olivares
+        </h1>
+      </div>
+      <p>
+        Una programadora full-stack 
+        <br />
+        con amplia experiencia en
+        <br />
+        React.js, React Native y Java.
+      </p>
+    </div>
+  </div>
+</div>
+`;
