@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <Separacion/> Separacion debe hacer match con snapshot 1`] = `
+<div>
+  <div
+    class="separacion"
+  />
+</div>
+`;

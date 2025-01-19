@@ -1,5 +1,5 @@
 import { fireEvent, render, screen } from "@testing-library/react";
-import { Button } from "../../components/Button";
+import { Button } from "../../components";
 
 
 describe('Pruebas en <Button/>', () => {
@@ -14,6 +14,12 @@ describe('Pruebas en <Button/>', () => {
             const elemnt = screen.getByText(text);
             expect(elemnt).toBeInTheDocument();
         })
+
+    test('Background correspondiente al ingresado "red"',()=>{
+        render(<Button text={text} color="red"/>);
+        const container = screen.getByText(text);
+        expect(container).toHaveStyle({ background: 'red' });
+    })
 
     test('onClick debe llamarse',()=>{
         const click = jest.fn(onClick);
@@ -38,6 +44,4 @@ describe('Pruebas en <Button/>', () => {
         const returnValue = click.mock.results[0].value;
         expect(returnValue).toBe('Funcionando');
     })
-
-    
 })
