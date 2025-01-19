@@ -3,7 +3,7 @@ interface Props{
     text:string;
 }
 
-const FadeInText = ({ text }:Props) => {
+export const FadeInText = ({ text }:Props) => {
     return (
         <div className="p-container">
             <div className="p">{addAnimation(text)}</div>
@@ -27,5 +27,3 @@ const addAnimation = (text:any) => {
         );
     });
 };
-
-export default FadeInText;

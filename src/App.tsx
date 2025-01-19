@@ -1,9 +1,7 @@
 
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
-import { Home } from './views/Home';
-import { Layout } from './components/Layout';
-import { About } from './views/About';
-import { Portafolio } from './views/Portafolio';
+import { Home, About, Portafolio } from './views';
+import { Layout } from './components';
 
 
 function App() {

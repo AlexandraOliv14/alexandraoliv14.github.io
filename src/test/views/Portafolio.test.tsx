@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react"
-import { Portafolio } from "../../views/Portafolio";
+import { Portafolio } from "../../views";
 
 describe('Pruebas en <Portafolio/>', () => {
     test('Bienvenida',()=>{

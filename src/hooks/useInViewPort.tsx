@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-function useInViewPort<T extends HTMLElement>(ref: React.RefObject<T>, options?: IntersectionObserverInit) {
+export function useInViewPort<T extends HTMLElement>(ref: React.RefObject<T>, options?: IntersectionObserverInit) {
     const [inViewport, setInViewport] = useState(false);
     const [observed, setObserved] = useState(false);
 
@@ -27,4 +27,3 @@ function useInViewPort<T extends HTMLElement>(ref: React.RefObject<T>, options?:
 
     return {inViewport, observed};
 }
-export default useInViewPort;

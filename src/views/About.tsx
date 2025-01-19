@@ -1,14 +1,11 @@
 import React, { useContext, useEffect, useRef, useState } from 'react'
 import { FiGithub, FiLinkedin, FiArrowUp, FiArrowDown } from "react-icons/fi";
 
-import { Separacion } from '../components/Separacion'
-import { ButtonIcon } from '../components/ButtonIcon'
+import { ButtonIcon, Separacion, FadeInText } from '../components'
 import { ThemeContext } from '../context/themeContext';
 import { theme, size } from '../theme';
 import Typewriter from "typewriter-effect";
-import useInViewPort from '../hooks/useInViewPort';
-import { useResponsiveWidth } from '../hooks/useResponsiveWidth';
-import FadeInText from '../components/FadeInText';
+import {useInViewPort, useResponsiveWidth} from '../hooks';
 
 export const About = () => {
     

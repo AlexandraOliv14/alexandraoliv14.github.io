@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react"
-import { About } from "../../views/About";
+import { About } from "../../views";
 
 describe('Pruebas en <About/>', () => {
     

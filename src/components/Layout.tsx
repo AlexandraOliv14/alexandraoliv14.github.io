@@ -1,8 +1,8 @@
 import React, { useContext } from 'react'
 import { Outlet, useNavigate } from 'react-router-dom'
-import { Button } from './Button';
 import { ThemeContext } from '../context/themeContext';
 import { theme } from '../theme';
+import { Button } from './Button';
 // FiPackage ->proyecto
 
 export const Layout = () => {

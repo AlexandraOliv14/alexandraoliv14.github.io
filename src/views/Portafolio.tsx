@@ -1,13 +1,9 @@
 import React, { useContext, useEffect } from 'react'
 import { ThemeContext } from '../context/themeContext';
 import { size, sizeType, theme } from '../theme';
-import { Button } from '../components/Button';
-import { useForm } from '../hooks/useForm';
-import { ButtonIcon } from '../components/ButtonIcon';
+import { Button, ButtonIcon, Select, Input, InputColor } from '../components';
+import { useForm } from '../hooks';
 import { FiGithub } from 'react-icons/fi';
-import { Select } from '../components/Select';
-import { Input } from '../components/Input';
-import { InputColor } from '../components/InputColor';
 
 export const Portafolio = () => {
 
