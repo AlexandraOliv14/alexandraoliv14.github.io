@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import { Outlet, useNavigate } from 'react-router-dom'
 import { ThemeContext } from '../context/themeContext';
 import { theme } from '../theme';
-import { Button } from './Button';
+import { Button } from '../components/Button';
 // FiPackage ->proyecto
 
 export const Layout = () => {
