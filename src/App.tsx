@@ -1,7 +1,7 @@
 
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import { Home, About, Portafolio } from './views';
-import { Layout } from './components';
+import { Layout } from './navigation';
 
 
 function App() {
